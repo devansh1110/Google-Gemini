@@ -1,0 +1,32 @@
+.custom-gradient{
+    background: linear-gradient(16deg, #4b90ff 0%, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid-temp-col{
+    grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+}
+
+.hideScrollBar::-webkit-scrollbar{
+    display: none;
+}
+
+.hrLoader{
+    border-radius: 4px;
+    border:none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: hrLoader 3s infinite linear;
+}
+
+@keyframes hrLoader {
+    0%{
+        background-position: -400px 0;
+    }
+    100%{
+        background-position: 400px 0;
+        }
+}
